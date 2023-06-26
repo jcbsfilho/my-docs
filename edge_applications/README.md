@@ -1,4 +1,4 @@
-Edge Application
+# Edge Application
 Edge Application is a product that lets you build web applications on Azion Edge Network, reducing latency and throughput between origin servers and users. You can define how your content will be cached, execute functions and business rules, and optimize content delivery for your users.
 
 Learn how to create an edge application in the getting started guide.
@@ -81,43 +81,90 @@ Select an existing application or click the Add application button to create a n
 In the Main Settings tab, in the dropdown list Supported Ciphers list, select the cipher suite desired.
 The table below shows the ciphers available in each cipher suite.
 
-Cipher	TLSv1.2_2018	TLSv1.2_2019	TLSv1.2_2021	TLSv1.3_2022
-TLS_AES_128_GCM_SHA256	✔︎	✔︎	✔︎	✕
-TLS_AES_256_GCM_SHA384	✔︎	✔︎	✔︎	✕
-TLS_CHACHA20_POLY1305_SHA256	✔︎	✔︎	✔︎	✕
-ECDHE-ECDSA-AES128-GCM-SHA256	✔︎	✔︎	✔︎	✔︎
-ECDHE-ECDSA-AES256-GCM-SHA384	✔︎	✔︎	✔︎	✔︎
-ECDHE-ECDSA-CHACHA20-POLY1305	✔︎	✔︎	✔︎	✔︎
-ECDHE-RSA-AES128-GCM-SHA256	✔︎	✔︎	✔︎	✔︎
-ECDHE-RSA-AES256-GCM-SHA384	✔︎	✔︎	✔︎	✔︎
-ECDHE-RSA-CHACHA20-POLY1305	✔︎	✔︎	✔︎	✔︎
-ECDHE-ECDSA-AES256-SHA384	✔︎	✔︎	✕	✕
-ECDHE-ECDSA-AES128-SHA256	✔︎	✔︎	✕	✕
-ECDHE-RSA-AES128-SHA256	✔︎	✔︎	✕	✕
-ECDHE-RSA-AES256-SHA384	✔︎	✔︎	✕	✕
-AES128-SHA256	✔︎	✕	✕	✕
-AES256-GCM-SHA384	✔︎	✕	✕	✕
-AES128-GCM-SHA256	✔︎	✕	✕	✕
-DHE-RSA-AES128-GCM-SHA256	✕	✕	✔︎	✔︎
-DHE-RSA-AES256-GCM-SHA384	✕	✕	✔︎	✔︎
-In the table above, the character ✔ indicates that the cipher in this line is present in the column group while ✕ indicates that the cipher in this line is not present in the column group.
+| Cipher | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021 | TLSv1.3_2022 |
+|--------|--------------|--------------|--------------|--------------|
+| TLS_AES_128_GCM_SHA256 | ✔︎ | ✔︎ | ✔︎ | ✕ |
+| TLS_AES_256_GCM_SHA384 | ✔︎ | ✔︎ | ✔︎ | ✕ |
+| TLS_CHACHA20_POLY1305_SHA256 | ✔︎ | ✔︎ | ✔︎ | ✕ |
+| ECDHE-ECDSA-AES128-GCM-SHA256 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-ECDSA-AES256-GCM-SHA384 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-ECDSA-CHACHA20-POLY1305 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-RSA-AES128-GCM-SHA256 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-RSA-AES256-GCM-SHA384 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-RSA-CHACHA20-POLY1305 | ✔︎ | ✔︎ | ✔︎ | ✔︎ |
+| ECDHE-ECDSA-AES256-SHA384 | ✔︎ | ✔︎ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA256 | ✔︎ | ✔︎ | ✕ | ✕ |
+| ECDHE-RSA-AES128-SHA256 | ✔︎ | ✔︎ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA384 | ✔︎ | ✔︎ | ✕ | ✕ |
+| AES128-SHA256 | ✔︎ | ✕ | ✕ | ✕ |
+| AES256-GCM-SHA384 | ✔︎ | ✕ | ✕ | ✕ |
+| AES128-GCM-SHA256 | ✔︎ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES128-GCM-SHA256 | ✕ | ✕ | ✔︎ | ✔︎ |
+| DHE-RSA-AES256-GCM-SHA384 | ✕ | ✕ | ✔︎ | ✔︎ |
+| DHE-RSA-CHACHA20-POLY1305 | ✕ | ✕ | ✔︎ | ✔︎ |
+| AES256-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| AES128-GCM | ✕ | ✕ | ✕ | ✕ |
+| AES256-CBC-SHA | ✕ | ✕ | ✕ | ✕ |
+| AES256-CBC | ✕ | ✕ | ✕ | ✕ |
+| AES128-CBC-SHA | ✕ | ✕ | ✕ | ✕ |
+| AES128-CBC | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-CHACHA20-POLY1305-OLD | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES256-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-CAMELLIA256-SHA | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-CAMELLIA128-SHA | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES256-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| DHE-RSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-CAMELLIA256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-CAMELLIA128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-ECDSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-CAMELLIA256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-CAMELLIA128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA384 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES128-SHA256 | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES256-SHA | ✕ | ✕ | ✕ | ✕ |
+| ECDHE-RSA-AES128-SHA | ✕ | ✕ | ✕ | ✕ |
 
 6. Edge Application Modules
-Modules can extend the capabilities of Edge Application. You can enable or disable modules in the Main Settings tab of your application, provided your account supports them and there are no existing dependencies upon deactivation. See the documentation for each module:
+In addition to caching and delivery, Azion Edge Application provides several modules that allow you to add functionality and optimize your web application. Some of these modules include:
 
-Module	Description
-Application Acceleration	Optimize API protocols and manage dynamic content delivery to accelerate web applications and APIs.
-Edge Caching	Configure cache settings to speed up delivery of static and dynamic content.
-Edge Functions	Build ultra-low latency applications and customize content delivery.
-Image Processor	Optimize image processing for various devices, browsers, and screen resolutions.
-Load Balancer	Balance traffic between your origin servers and cloud providers to improve fault tolerance and avoid network congestion.
+Edge Functions: You can create custom JavaScript functions that execute on the edge nodes, enabling you to perform complex operations close to your users and reducing latency.
+Bot Manager: This module detects and mitigates malicious bot traffic, protecting your application from automated threats.
+WAF (Web Application Firewall): It protects your application from common web application attacks, such as SQL injection and cross-site scripting (XSS).
+Image Optimization: This module automatically optimizes and delivers images in a highly efficient format, reducing their size and improving performance.
+API Gateway: It enables you to manage and distribute APIs efficiently, controlling access, applying security measures, and monitoring usage.
+To learn more about each module and how to configure them, refer to the Azion documentation.
+
 7. Related documentation
+To further explore Azion Edge Application and its features, you can refer to the following documentation:
+
+Azion Edge Application
+Getting Started Guide
 Domains
-Digital Certificates
-Real-Time Purge
-Device Groups
-Error Responses
-Rules Engine
-Single Origin
-DNSSEC Compatibility
-Didn’t find what you were looking for? Open a support ticket.
+Single Origin and Load Balancer
+Edge Caching
+Edge Functions
+Bot Manager
+WAF (Web Application Firewall)
+Image Optimization
+API Gateway
